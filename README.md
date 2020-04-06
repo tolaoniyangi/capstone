@@ -1,10 +1,10 @@
 ## Beyond the Blue Dot: A Storytelling Platform for Humanizing Urban Data 
-#### _A capstone project presented to the Faculty of Architecture, Planning and Preservation in Partial Fulfillment of the Requirements for the Degree, Master of Science in Urban Planning_  
-*May 2020*  
+#### A capstone project presented to the Faculty of Architecture, Planning and Preservation in Partial Fulfillment of the Requirements for the Degree, Master of Science in Urban Planning  
+**May 2020**  
   
-*Capstone Supervisor:* Anthony Vanky  
-Capstone Reader: Violet Whitney  
-Client: Sidewalk Labs  
+**Capstone Supervisor:** Anthony Vanky  
+**Capstone Reader:** Violet Whitney  
+**Client:** Sidewalk Labs  
 
 ### ABSTRACT 
 The outcomes of urban analyses and other decision-making processes can affect urban policy. As these focus on large-scale geographies, there is a void in the understanding of the people who inhabit the places being analyzed. This project aims to introduce empathy into the urban planning process by generating synthetic narratives of people based on data about places. Its central question is as follows: can you better understand a place by engaging with narratives of its archetypal inhabitants? 
