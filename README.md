@@ -1,6 +1,6 @@
 ## Beyond the Blue Dot: A Storytelling Platform for Humanizing Urban Data 
-#### A capstone project presented to the Faculty of Architecture, Planning and Preservation in Partial Fulfillment of the Requirements for the Degree, Master of Science in Urban Planning  
-**May 2020**  
+A capstone project presented to the Faculty of Architecture, Planning and Preservation in Partial Fulfillment of the Requirements for the Degree, Master of Science in Urban Planning
+May 2020  
   
 **Capstone Supervisor:** Anthony Vanky  
 **Capstone Reader:** Violet Whitney  
