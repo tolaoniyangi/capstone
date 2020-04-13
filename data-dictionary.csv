@@ -1,0 +1,15 @@
+age_group,variable_group,variable,variable_name
+5 Years And Over,,S1603_C01_001E,Total Population
+5 Years And Over,Language Spoken At Home,S1603_C02_001E,Speak Only English at Home
+5 Years And Over,Language Spoken At Home,S1603_C04_001E,Speak a Language other than English at Home
+5 to 17 Years,Language Spoken At Home,S1603_C02_002E,Speak Only English at Home
+5 to 17 Years,Language Spoken At Home,S1603_C04_002E,Speak a Language other than English at Home
+18 to 64 Years,Language Spoken At Home,S1603_C02_003E,Speak Only English at Home
+18 to 64 Years,Language Spoken At Home,S1603_C04_003E,Speak a Language other than English at Home
+65 Years and Over ,Language Spoken At Home,S1603_C02_003E,Speak Only English at Home
+65 Years and Over ,Language Spoken At Home,S1603_C04_004E,Speak a Language other than English at Home
+25 Years and Over ,,S1603_C01_012E,Total Population
+25 Years and Over ,Educational Attainment,S1603_C01_013E,Less than High school graduate
+25 Years and Over ,Educational Attainment,S1603_C01_014E,High school graduate (includes equivalency)
+25 Years and Over ,Educational Attainment,S1603_C01_015E,Some college or associate degree
+25 Years and Over ,Educational Attainment,S1603_C01_016E,Bachelor's Degree or Higher
