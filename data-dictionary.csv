@@ -1,15 +1,19 @@
-age_group,variable_group,variable,variable_name
-5 Years And Over,,S1603_C01_001E,Total Population
-5 Years And Over,Language Spoken At Home,S1603_C02_001E,Speak Only English at Home
-5 Years And Over,Language Spoken At Home,S1603_C04_001E,Speak a Language other than English at Home
-5 to 17 Years,Language Spoken At Home,S1603_C02_002E,Speak Only English at Home
-5 to 17 Years,Language Spoken At Home,S1603_C04_002E,Speak a Language other than English at Home
-18 to 64 Years,Language Spoken At Home,S1603_C02_003E,Speak Only English at Home
-18 to 64 Years,Language Spoken At Home,S1603_C04_003E,Speak a Language other than English at Home
-65 Years and Over ,Language Spoken At Home,S1603_C02_003E,Speak Only English at Home
-65 Years and Over ,Language Spoken At Home,S1603_C04_004E,Speak a Language other than English at Home
-25 Years and Over ,,S1603_C01_012E,Total Population
-25 Years and Over ,Educational Attainment,S1603_C01_013E,Less than High school graduate
-25 Years and Over ,Educational Attainment,S1603_C01_014E,High school graduate (includes equivalency)
-25 Years and Over ,Educational Attainment,S1603_C01_015E,Some college or associate degree
-25 Years and Over ,Educational Attainment,S1603_C01_016E,Bachelor's Degree or Higher
+sex,age_group,variable_group,variables,variable_name
+both,5 to 17 Years,Language Spoken At Home,S1603_C02_002E,Speak Only English at Home
+both,18 to 64 Years,Language Spoken At Home,S1603_C02_003E,Speak Only English at Home
+both,65 Years and Over ,Language Spoken At Home,S1603_C02_003E,Speak Only English at Home
+both,5 to 17 Years,Language Spoken At Home,S1603_C04_002E,Speak a Language other than English at Home
+both,18 to 64 Years,Language Spoken At Home,S1603_C04_003E,Speak a Language other than English at Home
+both,65 Years and Over ,Language Spoken At Home,S1603_C04_004E,Speak a Language other than English at Home
+both,5 to 17 Years,Language Spoken At Home,S1601_C01_005E,Spanish
+both,18 to 64 Years,Language Spoken At Home,S1601_C01_006E,Spanish
+both,65 Years and Over ,Language Spoken At Home,S1601_C01_007E,Spanish
+both,5 to 17 Years,Language Spoken At Home,S1601_C01_009E,Other Indo-European languages
+both,18 to 64 Years,Language Spoken At Home,S1601_C01_010E,Other Indo-European languages
+both,65 Years and Over ,Language Spoken At Home,S1601_C01_011E,Other Indo-European languages
+both,5 to 17 Years,Language Spoken At Home,S1601_C01_013E,Asian and Pacific Island languages
+both,18 to 64 Years,Language Spoken At Home,S1601_C01_014E,Asian and Pacific Island languages
+both,65 Years and Over ,Language Spoken At Home,S1601_C01_015E,Asian and Pacific Island languages
+both,5 to 17 Years,Language Spoken At Home,S1601_C01_017E,Other languages
+both,18 to 64 Years,Language Spoken At Home,S1601_C01_018E,Other languages
+both,65 Years and Over ,Language Spoken At Home,S1601_C01_019E,Other languages
