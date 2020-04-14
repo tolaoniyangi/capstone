@@ -1,13 +1,17 @@
+CLICK male or female picture, yellow
+CLICK age group buttons below 
+use slider for percentile 
+
 STEPS
 - User selects person's age and gender 
-	- BACK END returns what % of the population is that selected person's profile from AGE BY SEX 	table %'s for study area
+NOPE - BACK END returns what % of the population is that selected person's profile from AGE BY SEX 	table %'s for study area
 	- so table looks like [young male, young female, child male, child female, mid twenties male... 
 	- by using if statements -> 
 		if gender == female AND age = 25 or age = 29 etc 
 			return category = young female 
 NOPE - then plug this into the age by sex table to get the % distribution that this category lies in 
 
-- Then we return the table for this category to use for calculations. [Tables for each age/sex category have been made since]. Table contains population percentages for 
+- Then we return the table for this category to use for calculations. [Tables for each age/sex category have been made since]. Table contains population numbers for 
 	- Income bins
 	- educational attainment bins
 	- travel time to work bins
@@ -15,24 +19,28 @@ NOPE - then plug this into the age by sex table to get the % distribution that t
 	- language spoken at home bins
 	- means of transportation to work bins 
 
-- Then calculate the percentiles? 
+- Then calculate the percentiles from frequency distribution 
 	- separate the binned groups
 	- for each one: transpose the data 
-	- calculate the relative frequency as % 
+NOPE - calculate the relative frequency as % 
 		[multidimensional tables, proportions]
-	- maybe how to do this is reverse engineer the bins and THEN get the percentile from the new values
+NOPE - maybe how to do this is reverse engineer the bins and THEN get the percentile from the new values
+	- calculate percentiles for ordered categorical
+		- just sort the range and then calculate the percentile
 
 - And people get to pick from those percentiles to return values for each category that feeds into the text generation
-	- So 20th% of this person category is in what travel time to work? 
+	- So 20th% of this person category gives what value for each table?
+	- and what smaller category does this correspond with 
+		eg what travel time to work? 
+	- do this by saying for this table return whatever row from'name' field if value == percentile 	returned value
 
-
+SO calculating the percentile for the frequency distribution
 https://stackoverflow.com/questions/36944884/calculating-percentile-for-specific-groups
 
 https://stackoverflow.com/questions/39581893/pandas-find-percentile-stats-of-a-given-column
 The standard normal distribution can also be useful for computing percentilestext annotation indicator. For example, the median is the 50th percentile, the first quartile is the 25th percentile, and the third quartile is the 75th percentile. In some instances it may be of interest to compute other percentiles, for example the 5th or 95th. The formula below is used to compute percentiles of a normal distribution.
 
-As has been mentioned, means, SDs and hinge points are not meaningful for categorical data. Hinge points (e.g., median and quartiles) may be meaningful for ordinal data. Your title also asks what summary statistics should be used to describe categorical data. It is standard to characterize categorical data by counts and percentages. (You may also want to include a 95% confidence interval around the percentages.) For example, if your data were:
-
+https://www.sociologicalscience.com/download/vol-4/november/SocSci_v4_641to655.pdf
 
 ---------------------------------------
 age income scatterplot
@@ -78,17 +86,13 @@ SOOOO basically loops through the dataset for the selected person ; who is age, 
 	if age is 18 to 24: SEX BY AGE BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 18 YEARS AND OVER	
 	if age is 25 and above: use SEX BY AGE BY EDUCATIONAL ATTAINMENT FOR THE POPULATION 25YEARS AND OVER	
 	if age is below 18 use: nothing
---------EDUCATIONAL ATTAINMENT	in the subject tables is way better , has it already separated into 18 to 24 or whatever 
----------CHARACTERISTICS OF PEOPLE BY LANGUAGE SPOKEN AT HOME	Estimate!!Speak a language other than English at home!!Total!!EDUCATIONAL ATTAINMENT!!Population 25 years and over!!Less than high school graduate	
--------------Estimate!!No computer in household!!Total population in households!!EDUCATIONAL ATTAINMENT!!Household population 25 years and over
------------also has income estimates Estimate!!Native; born outside U.S.!!INDIVIDUALS' INCOME IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS)!!Population 15 years and over	
-----------Estimate!!Households!!Mean income (dollars)	
+	
 
 age and sex maybe??? for knowing what % of the population the selected person falls under
 	so then this person is likely to be ... avg
 	within that, the outliers of this age group
 	
-SEX BY AGE BY EMPLOYMENT STATUS FOR THE POPULATION 16 YEARS AND OVER	
+
 SEX OF WORKERS BY MEANS OF TRANSPORTATION TO WORK 
 	not this MEANS OF TRANSPORTATION TO WORK BY AGE	
 SEX OF WORKERS BY TIME LEAVING HOME TO GO TO WORK	
@@ -100,18 +104,3 @@ and therewill be some tables just for age and some just for sex
 
 first thing calculate what the % breakdown is for each category within the study area
 then see where that fits in with what & of the population is 25 and male?
-
-subject tables
-SELECTED CHARACTERISTICS OF THE NATIVE AND FOREIGN-BORN POPULATIONS
-COMMUTING CHARACTERISTICS BY SEX
-MEANS OF TRANSPORTATION TO WORK BY SELECTED CHARACTERISTICS
-CHILDREN CHARACTERISTICS;CHARACTERISTICS OF TEENAGERS 15 TO 19 YEARS OLD;GRANDCHILDREN CHARACTERISTICS;GRANDPARENTS
-HOUSEHOLDS AND FAMILIES
-MARITAL STATUS;
-SCHOOL ENROLLMENT
-EDUCATIONAL ATTAINMENT
-LANGUAGE SPOKEN AT HOME;LIMITED ENGLISH SPEAKING HOUSEHOLDS;CHARACTERISTICS OF PEOPLE BY LANGUAGE SPOKEN AT HOME
-INCOME IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS);MEAN INCOME IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS);MEDIAN INCOME IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS);EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS);MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) OF WORKERS BY SEX AND WOMEN'S EARNINGS AS A PERCENTAGE OF MEN'S EARNINGS BY SELECTED CHARACTERISTICS
-OCCUPATION BY SEX FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;OCCUPATION BY SEX FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;INDUSTRY BY SEX FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;INDUSTRY BY SEX FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;INDUSTRY BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;OCCUPATION BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;INDUSTRY BY CLASS OF WORKER FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;CLASS OF WORKER BY SEX FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;CLASS OF WORKER BY SEX FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;OCCUPATION BY SEX AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;OCCUPATION BY SEX AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;INDUSTRY BY SEX AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;INDUSTRY BY SEX AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;CLASS OF WORKER BY SEX AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER;CLASS OF WORKER BY SEX AND MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2018 INFLATION-ADJUSTED DOLLARS) FOR THE FULL-TIME, YEAR-ROUND CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER
-OCCUPANCY CHARACTERISTICS;DEMOGRAPHIC CHARACTERISTICS FOR OCCUPIED HOUSING UNITS;FINANCIAL CHARACTERISTICS;PHYSICAL HOUSING CHARACTERISTICS FOR OCCUPIED HOUSING UNITS
-SELECTED CHARACTERISTICS OF HEALTH INSURANCE COVERAGE IN THE UNITED STATES;SELECTED CHARACTERISTICS OF THE UNINSURED IN THE UNITED STATES;SELECTED CHARACTERISTICS OF THE UNINSURED IN PUERTO RICO;PRIVATE HEALTH INSURANCE COVERAGE BY TYPE AND SELECTED CHARACTERISTICS;PUBLIC HEALTH INSURANCE COVERAGE BY TYPE AND SELECTED CHARACTERISTICS
